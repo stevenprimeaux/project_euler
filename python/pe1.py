@@ -3,12 +3,13 @@ start_time = time.time()
 
 
 
-def sum_divisibles(divisor, target):
+def sum_multiples(divisor, target):
     n = (target - 1) // divisor
-    sum_multiples = divisor * (n * (n + 1)) / 2
-    return(sum_multiples)
+    sum_multiples = divisor * ((n * (n + 1)) / 2)
+    return sum_multiples
 
-print 'solution:', sum_divisibles(3, 1000) + sum_divisibles(5, 1000) - sum_divisibles(15, 1000)
+sol = sum_multiples(3, 1000) + sum_multiples(5, 1000) - sum_multiples(15, 1000)
+print 'solution:', sol
 
 
 
