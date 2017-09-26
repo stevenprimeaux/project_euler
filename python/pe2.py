@@ -2,7 +2,6 @@ import time
 start_time = time.time()
 
 
-
 def fibonacci_sum(x):
     limit = x
     current_sum = 0
@@ -16,9 +15,9 @@ def fibonacci_sum(x):
         c = a + b
     return current_sum
 
-print fibonacci_sum(4000000)
 
-
+sol = fibonacci_sum(4000000)
+print 'solution:', sol
 
 stop_time = time.time()
 print 'time:', stop_time - start_time
